@@ -1,0 +1,23 @@
+body{
+    background:rgb(134, 236, 134);
+}
+.inner-row{
+    height: 100vh;
+
+}
+.primaryBg{
+    background: rgb(134, 236, 134);
+}
+.primaryColor{
+    color:rgb(134, 236, 134); 
+}
+.form-box{
+    
+    background: white;
+    box-shadow:rgb(134, 236, 134);
+    border-radius: 10px;
+}
+
+.register-form{
+    display: none;
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>firebase</title>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="firebase.js/bootstrap.min.js">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+
+<script type="module" src="style.js" defer>
+       
+</script>
+<body>
+    <script src="https://code.jquery.com/jquery-latest.min.js"
+        type="text/javascript"></script>
+    <div class="container">
+        <div class="row justify-content-center align-items-center  inner-row">
+            <div class="col-12 col-md-5">
+                <div class="form-box login-form p-md-5 p-3">
+                    <div class="form-title">
+                        <h2 class="fw-bold mb-3">Login</h2>
+                        <form action="">
+                            <div class="form-floating mb-3">
+                                <input type="Email" class="form-control form-control-sm" id="email" placeholder="Email">
+                                <label for="form-floatinginput">Email</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control form-control-sm" id="password" placeholder="password">
+                                <label for="form-floating">password</label>
+                            </div>
+                            <div class="mt-3">
+                                <button class="btn primaryBg text-white">Login</button>
+
+                            </div>
+                        </form>
+                        <div class="mt-3">
+                            <span>Don't have account?</span> <button class="bg-transparent p-0 border-0 primaryColor singup-show">SignUp </button>
+                        </div>
+                    
+                </div>
+            </div>
+
+
+
+            <div class="form-box register-form p-md-5 p-3 ">
+                <div class="form-title">
+                    <h2 class="fw-bold mb-3">Create Your Account</h2>
+                    <form action="">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control form-control-sm" id="firstname" placeholder="first-name">
+                            <label for="form-floatinginput">First name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control form-control-sm" id="lastname" placeholder="lastname">
+                            <label for="form-floatinginput">Last name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="Email" class="form-control form-control-sm" id="email" placeholder="Email">
+                            <label for="form-floatinginput">Email</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control form-control-sm" id="password" placeholder="password">
+                            <label for="form-floating">password</label>
+                        </div>
+                        <div class="mt-3">
+                            <button id="submit" class="btn primaryBg text-white">SignUp</button>
+
+                        </div>
+                    </form>
+                    <div class="mt-3">
+                        <span>Already have account?</span> <button class="bg-transparent p-0 border-0 primaryColor login-show">Login </button>
+                    </div>
+                
+            </div>
+        </div>
+        </div>
+    </div>
+
+<script>
+    
+$('.singup-show').click(function(){
+$('.register-form').show();
+$('.login-form').hide();
+})
+
+
+$('.login-show').click(function(){
+$('.login-form').show();
+$('.register-form').hide();
+})
+</script>
+<!-- <script src="bootstrap.bundle.min.js"></script>     -->
+<!-- <script src="jquery.js"></script> -->
+<!-- <script src="style.js"></script> -->
+</body>
+
+<script >
+   
+ 
+   
+
+
+ // Import the functions you need from the SDKs you need
+ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+ import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js";
+ // TODO: Add SDKs for Firebase products that you want to use
+ // https://firebase.google.com/docs/web/setup#available-libraries
+
+ // Your web app's Firebase configuration
+ // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+ const firebaseConfig = {
+   apiKey: "AIzaSyBNFWefsba6XJ4PgDgtbRwA8ioRohzzBJs",
+   authDomain: "azuzz-7f237.firebaseapp.com",
+   projectId: "azuzz-7f237",
+   storageBucket: "azuzz-7f237.appspot.com",
+   messagingSenderId: "587178565694",
+   appId: "1:587178565694:web:3160fd2cb753b4ca16716f",
+   measurementId: "G-ZRXP8CCFT5"
+ };
+
+ // Initialize Firebase
+ const app = initializeApp(firebaseConfig);
+//  const analytics = getAnalytics(app);
+
+const firstname=document.getElementById("firstname").value
+const lastname=document.getElementById("lastname").value
+const email=document.getElementById("email").value
+const password=document.getElementById("password").value
+
+const submit=document.getElementById("submit").addEventListener("load",(e)=>{
+
+e.preventDefault()
+alert("hello mi nigga")
+})
+
+
+
+
+  
+// alert("hello a7med")
+
+
+
+// A $( document ).ready() block.
+// $( document ).ready(function() {
+//     console.log( "ready!" );
+// });
+</script>
+  
+    
+
+
+</html>
